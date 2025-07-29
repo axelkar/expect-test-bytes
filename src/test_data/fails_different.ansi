@@ -1,0 +1,22 @@
+
+[1m[91merror[97m: expect test failed[0m
+   [1m[34m-->[0m src/test_data/example
+
+You can update all `expect!` tests by running:
+
+    env UPDATE_EXPECT=1 cargo test
+
+To update a single test, place the cursor on `expect` token and use `run` feature of rust-analyzer.
+
+[1mExpect[0m:
+<binary>
+
+[1mActual[0m:
+<binary>
+
+[1mDiff[0m:
+Binary files differ at byte 0x3
+
+Expect: 65 78 61 [32m6d[0m 70 6c 65 0a example_
+Actual: 65 78 61 [31m2d[0m 20 6e 6f 74 exa- not
+                 [1m^^[0m

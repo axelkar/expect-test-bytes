@@ -1,0 +1,16 @@
+
+[1m[91merror[97m: expect test failed[0m
+   [1m[34m-->[0m src/test_data/missing
+
+You can update all `expect!` tests by running:
+
+    env UPDATE_EXPECT=1 cargo test
+
+To update a single test, place the cursor on `expect` token and use `run` feature of rust-analyzer.
+
+[1mExpect[0m:
+[1mNot found[0m
+
+[1mActual[0m:
+<binary>
+

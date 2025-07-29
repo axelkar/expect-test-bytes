@@ -1,0 +1,23 @@
+[package]
+name = "expect-test-bytes"
+version = "0.1.0"
+authors = ["Axel Karjalainen <axel@axka.fi>"]
+edition = "2021"
+rust-version = "1.60.0" # Same as expect-test
+description = "Minimalistic snapshot testing library for bytes"
+readme = "README.md"
+repository = "https://github.com/axelkar/expect-test-bytes"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+
+[lints.clippy]
+pedantic = "warn"
+str_to_string = "warn"
+string_to_string = "warn"
+
+[dev-dependencies]
+expect-test = "1.5.1"
