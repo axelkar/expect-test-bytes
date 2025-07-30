@@ -18,7 +18,9 @@ fn fails_missing() {
         let expect = expect_file!["test_data/missing"];
 
         let mut buf = Vec::new();
-        assert!(expect.assert_eq_nopanic_imp(b"example\n", &mut buf).is_err());
+        assert!(expect
+            .assert_eq_nopanic_imp(b"example\n", &mut buf)
+            .is_err());
         String::from_utf8(buf).expect("Only printing strings")
     };
 
@@ -32,7 +34,9 @@ fn fails_different() {
         let expect = expect_file!["test_data/example"];
 
         let mut buf = Vec::new();
-        assert!(expect.assert_eq_nopanic_imp(b"exa- not this\n", &mut buf).is_err());
+        assert!(expect
+            .assert_eq_nopanic_imp(b"exa- not this\n", &mut buf)
+            .is_err());
         String::from_utf8(buf).expect("Only printing strings")
     };
 

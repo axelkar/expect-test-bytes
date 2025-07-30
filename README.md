@@ -5,9 +5,8 @@
 ![Crates.io MSRV](https://img.shields.io/crates/msrv/expect-test-bytes)
 ![Crates.io License](https://img.shields.io/crates/l/expect-test-bytes)
 
-A copy of [expect-test](https://github.com/rust-analyzer/expect-test), a minimalistic snapshot testing library, for bytes and binary data.
-
-Currently only supports files. See also [expect-test#47](https://github.com/rust-analyzer/expect-test/issues/47).
+Copy of [expect-test](https://github.com/rust-analyzer/expect-test),
+a minimalistic snapshot testing library, for bytes and binary data.
 
 ## Example
 
